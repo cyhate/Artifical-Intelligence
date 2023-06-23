@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Cellular Automata</title>
+	<style>
+		body{
+		background-color: aliceblue;
+		box-sizing: border-box;
+		text-align: center;
+			}
+		#row{
+			background-color:white;
+			}
+		td {
+			width:15px;height:1px;
+            border:2px solid #96D4D4;
+        }	
+		table {
+            border:1px solid black;
+        }
+	</style>
+   
+  </head>
+   
+   
+   
+  <body>
+	<h1><em>~ Cellular Automata ~</em></h1></br>
+      <h3><em>PANEL OF NUMBERS:</em></h3>
+	  
+	  
+	  
+		<p id="section1">  </p>
+		<h4 style=text-align:left;><em>50x50:</em></h4>
+        <div id="row">  </div>
+     
+	 
+	 
+	  
+      <!-- <span id="number">0</span>
+		onclick="clear(document.getElementById('section1').value)"
+		lang="en"
+		<span id="section1"> </span>
+		<p id="section2"> </p>
+		
+		<div id='section1'>  </div>
+		<div class="container"> </div>
+		
+		clear(document.getElementById('section1').value)
+	  -->
+	  
+	
+
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	
+	
+	
+	<button id="generateBtn" onclick="random();" ><em> Generate Random </em></button>
+	<button id="generateBtn1" onclick="ten();" ><em> 10th Generation </em></button>
+
+	
+
+	<!--button id="clearhide" type="button" onclick="document.getElementById('row').style.display='none'"> Clear Hide </button-->
+	<button type="button" onclick="cleaner()" ><em> Clear </em></button>
+	
+	
+	
+    <script src="javas.js"></script>
+	
+	
+	
+	<script>
+	for (let i = 0; i < 2500; i++) {
+      let div = document.createElement('div')
+      document.querySelector('.row').appendChild(div)
+    }
+	
+	
+	
+	function cleaner() {
+	document.getElementById("row").innerHTML= "";
+	}
+	</script>
+	
+	
+	
+	
+
+	
+</body>
+
+
+</html>
